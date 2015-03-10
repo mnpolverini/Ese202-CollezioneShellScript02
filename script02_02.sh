@@ -1,5 +1,12 @@
 #!/bin/bash
 
+for i in $(seq 10)
+do
+	mkdir $@$i
+done
+
+exit 0
+
 #
 # Questo script riceve un argomento. Esso contiene un _prefisso_ per il nome di una directory.
 # Lo script crea 10 directory, nella directory corrente, con il prefisso fornito e un numero.

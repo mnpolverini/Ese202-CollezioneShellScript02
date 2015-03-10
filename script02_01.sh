@@ -1,5 +1,14 @@
 #!/bin/bash
 
+
+File=`ls -d */`
+
+for i in $File
+do
+	date > $i/passaggio.txt
+done
+
+
 # 1) Documentati sul comando date
 # 2) Guarda cosa accade col comando echo pippo > file.txt
 # 3) Ricorda il comando mkdir
